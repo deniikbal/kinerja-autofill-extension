@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Kinerja Jabar Auto Fill",
+  "version": "1.0.0",
+  "description": "Auto-fill form aktivitas kinerja Jabar untuk Senin-Jumat",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://kinerja.jabarprov.go.id/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://kinerja.jabarprov.go.id/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

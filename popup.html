@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinerja Jabar Auto Fill</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ Kinerja Auto Fill</h1>
+      <p>Setup template untuk Senin - Jumat</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-day="senin">Senin</button>
+      <button class="tab-btn" data-day="selasa">Selasa</button>
+      <button class="tab-btn" data-day="rabu">Rabu</button>
+      <button class="tab-btn" data-day="kamis">Kamis</button>
+      <button class="tab-btn" data-day="jumat">Jumat</button>
+    </div>
+
+    <div class="form-container">
+      <form id="templateForm">
+        <div class="form-group">
+          <label>Nama Aktivitas</label>
+          <input type="text" id="namaAktivitas" placeholder="Melaksanakan kegiatan pembelajaran..." required>
+        </div>
+
+        <div class="form-group">
+          <label>Sasaran Kinerja Terkait</label>
+          <input type="text" id="sasaranKinerja" placeholder="(Guru Mapel) Terbimbingnya Siswa..." required>
+          <small>Masukkan teks yang ada di dropdown</small>
+        </div>
+
+        <div class="form-group">
+          <label>Output Aktivitas (JTM)</label>
+          <input type="number" id="outputAktivitas" value="1" min="1" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Waktu Mulai</label>
+            <input type="time" id="waktuMulai" value="07:00" required>
+          </div>
+          <div class="form-group">
+            <label>Waktu Selesai</label>
+            <input type="time" id="waktuSelesai" value="08:00" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Keterangan</label>
+          <textarea id="keterangan" rows="3" placeholder="Isilah dengan singkat, padat, dan jelas."></textarea>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label>
+            <input type="checkbox" id="autoSave">
+            Auto-save setelah fill form
+          </label>
+        </div>
+
+        <button type="submit" class="btn-save">💾 Simpan Template</button>
+      </form>
+
+      <div class="actions">
+        <button id="copyTemplate" class="btn-secondary">📋 Copy ke Semua Hari</button>
+        <button id="clearAll" class="btn-danger">🗑️ Hapus Semua</button>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>💡 <strong>Cara pakai:</strong></p>
+      <ol>
+        <li>Setup template untuk setiap hari (Senin-Jumat)</li>
+        <li>Buka halaman <a href="https://kinerja.jabarprov.go.id/kinerjajabar/aktivitas/lapor" target="_blank">Lapor Aktivitas</a></li>
+        <li>Klik tombol "⚡ Auto Fill" di pojok kanan bawah</li>
+        <li>Form otomatis terisi sesuai hari ini!</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
