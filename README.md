@@ -1,7 +1,5 @@
 # ⚡ Kinerja Jabar Auto Fill Extension
 
-Extension Chrome untuk auto-fill form aktivitas di https://kinerja.jabarprov.go.id dengan satu klik!
-
 ## 🌟 Fitur
 
 - ✅ Auto-fill form aktivitas untuk Senin-Jumat
@@ -30,28 +28,6 @@ Download atau clone folder `kinerja-autofill-extension` ini.
 - Extension siap digunakan!
 
 ## 🚀 Cara Pakai
-
-### Setup Template (Sekali Saja)
-
-1. **Klik icon extension** di toolbar Chrome
-2. **Pilih hari** (Senin-Jumat) di tab
-3. **Isi template** untuk hari tersebut:
-   - Nama Aktivitas
-   - Sasaran Kinerja Terkait
-   - Output Aktivitas (JTM)
-   - Waktu Mulai & Selesai
-   - Keterangan
-4. **Centang "Auto-save"** jika ingin langsung save otomatis
-5. **Klik "Simpan Template"**
-6. **Ulangi** untuk hari lainnya, atau gunakan tombol "Copy ke Semua Hari"
-
-### Mengisi Form
-
-1. Buka halaman: https://kinerja.jabarprov.go.id/kinerjajabar/aktivitas/lapor
-2. Klik tombol **"⚡ Auto Fill"** di pojok kanan bawah
-3. Form otomatis terisi sesuai template hari ini!
-4. Cek hasilnya dan klik "Simpan" (atau otomatis jika sudah diatur)
-
 ## 💡 Tips
 
 - **Copy Template**: Jika aktivitas sama setiap hari, isi satu template lalu klik "Copy ke Semua Hari"
