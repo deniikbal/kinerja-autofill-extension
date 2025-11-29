@@ -37,10 +37,6 @@ Download atau clone folder `kinerja-autofill-extension` ini.
 
 ## 🔧 Troubleshooting
 
-**Q: Tombol Auto Fill tidak muncul?**
-- Refresh halaman
-- Pastikan URL adalah https://kinerja.jabarprov.go.id
-
 **Q: Form tidak terisi?**
 - Pastikan sudah setup template untuk hari ini
 - Cek apakah ada perubahan struktur form di website
